@@ -1,0 +1,426 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 1000px) {
+  header {
+    height: 560px !important;
+    max-width: 1000px;
+  }
+  header .headertwo ul {
+    margin-top: 440px !important;
+  }
+  header .headertwo ul a {
+    font-size: 27px !important;
+  }
+
+  .osnova {
+    max-width: 900px;
+  }
+  .osnova img {
+    width: 300px;
+    height: 260px;
+  }
+}
+@media only screen and (max-width: 880px) {
+  header {
+    height: 550px !important;
+    max-width: 880px;
+  }
+  header .headerone {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .headerone .two h1 {
+    text-align: left;
+    font-size: 28px !important;
+  }
+  header .headerone .two p {
+    font-size: 15px !important;
+    text-align: left !important;
+  }
+  header .headertwo ul {
+    margin-top: 380px !important;
+  }
+  header .headertwo ul a {
+    font-size: 20px !important;
+  }
+
+  .osnova {
+    max-width: 800px;
+  }
+  .osnova #onas h2 {
+    font-size: 27px !important;
+  }
+  .osnova #onas img {
+    width: 250px;
+    height: 230px;
+  }
+  .osnova #vakansii {
+    width: 700px;
+  }
+  .osnova #vakansii h2 {
+    font-size: 27px !important;
+  }
+  .osnova #vakansii .spisok {
+    width: 700px;
+  }
+  .osnova #vakansii img {
+    width: 200px;
+    height: 170px;
+    margin-left: 10px;
+  }
+
+  footer {
+    max-width: 880px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .knopka {
+    right: 650px !important;
+  }
+
+  header {
+    height: 550px !important;
+    background-size: 900px 550px;
+    background-position: center !important;
+    max-width: 400px !important;
+  }
+  header .headerone {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .headerone .one p {
+    font-size: 15px;
+  }
+  header .headerone .one li {
+    margin: 5px !important;
+  }
+  header .headerone .two h1 {
+    text-align: left;
+    font-size: 28px !important;
+  }
+  header .headerone .two p {
+    font-size: 15px !important;
+    text-align: left !important;
+  }
+  header .headertwo ul {
+    margin-top: 300px !important;
+  }
+  header .headertwo ul li {
+    display: block !important;
+    margin-top: 10px !important;
+  }
+  header .headertwo ul li a {
+    font-size: 20px !important;
+  }
+
+  .osnova {
+    width: 380px !important;
+    margin: 0px !important;
+  }
+  .osnova #onas h2 {
+    font-size: 27px !important;
+  }
+  .osnova #onas p {
+    word-spacing: 3px !important;
+    padding: 2px !important;
+    text-indent: 20px !important;
+    font-size: 14px !important;
+  }
+  .osnova #onas img {
+    margin-top: 5px !important;
+    margin-left: 10px !important;
+    margin-bottom: 5px !important;
+    width: 150px !important;
+    height: 120px !important;
+  }
+  .osnova #vakansii {
+    width: 380px !important;
+  }
+  .osnova #vakansii .spisok {
+    width: 380px !important;
+    display: block !important;
+  }
+  .osnova #vakansii h4 {
+    font-size: 18px !important;
+  }
+  .osnova #vakansii h2 {
+    font-size: 27px !important;
+  }
+  .osnova #vakansii p {
+    word-spacing: 3px !important;
+    padding: 2px !important;
+    text-indent: 20px !important;
+    font-size: 14px !important;
+  }
+  .osnova #vakansii .img {
+    max-width: 400px !important;
+  }
+  .osnova #vakansii img {
+    margin-top: 5px !important;
+    width: 150px !important;
+    height: 120px !important;
+  }
+  .osnova #vakansii .snoska {
+    margin-bottom: 40px !important;
+  }
+
+  footer {
+    max-width: 400px !important;
+  }
+}
+body {
+  background-image: url(../img/fonser2.jpg);
+}
+
+header {
+  background-image: url(../img/logos2.jpg);
+  background-position: 50% 40%;
+  background-repeat: no-repeat;
+  height: 600px;
+  border-bottom: solid #201f1c 3px;
+}
+header .headerone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+header .headerone .one {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+header .headerone .one ul li {
+  display: inline-block;
+  margin: 15px;
+  font-family: "Merriweather", serif;
+  font-size: 18px;
+  color: #e4d1ca;
+}
+header .headerone .two {
+  text-align: end;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-family: "Merriweather", serif;
+  font-size: 18px;
+  color: #e4d1ca;
+  margin-right: 10px;
+}
+header .headerone .two h1 {
+  font-size: 40px;
+}
+header .headerone .two p {
+  font-size: 20px;
+  text-align: end;
+  margin: 10px;
+}
+header .headerone .two p img {
+  border-radius: 14px;
+  margin-right: 10px;
+}
+header .headertwo {
+  width: 1000px;
+  margin: 0 auto;
+}
+header .headertwo ul {
+  margin-top: 480px;
+}
+header .headertwo ul li {
+  display: inline-block;
+  font-family: "Merriweather", serif;
+  font-size: 18px;
+  color: #e4d1ca;
+}
+header .headertwo ul li a {
+  color: #d3a93f;
+  font-size: 30px;
+  margin: 20px;
+}
+header .headertwo ul li a:hover {
+  color: #ffd66e;
+}
+
+.osnova {
+  font-family: "Merriweather", serif;
+  font-size: 18px;
+  color: #e4d1ca;
+  width: 1000px;
+  margin: 0 auto;
+}
+.osnova #onas {
+  border-bottom: solid #201f1c 3px;
+  margin-bottom: 10px;
+}
+.osnova #onas h2 {
+  color: #af7e02;
+  font-size: 30px;
+  text-align: center;
+  padding: 19px;
+}
+.osnova #onas p {
+  word-spacing: 7px;
+  font-style: italic;
+  padding: 8px;
+  text-indent: 25px;
+  color: #050505;
+}
+.osnova #onas img {
+  margin-top: 25px;
+  margin-left: 10px;
+  margin-bottom: 28px;
+}
+.osnova #vakansii h2 {
+  color: #af7e02;
+  font-size: 30px;
+  text-align: center;
+  padding: 19px;
+}
+.osnova #vakansii p {
+  word-spacing: 7px;
+  font-style: italic;
+  padding: 8px;
+  text-indent: 25px;
+  color: #050505;
+}
+.osnova #vakansii h4 {
+  font-size: 22px;
+  text-align: center;
+  padding: 19px;
+  color: #050505;
+}
+.osnova #vakansii .img {
+  max-width: 310px;
+}
+.osnova #vakansii img {
+  margin-top: 80px;
+}
+.osnova #vakansii .spisok {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: solid #201f1c 3px;
+  padding-bottom: 20px;
+}
+.osnova #vakansii .snoska {
+  margin-bottom: 40px;
+}
+
+footer {
+  border-top: solid #201f1c 3px;
+  height: 200px;
+  background-image: url(../img/fonser.jpg);
+}
+footer p {
+  color: wheat;
+  text-align: center;
+  margin-top: 40px;
+}
+footer div {
+  width: 200px;
+  margin: 0px auto;
+}
+
+div::-moz-selection, h1::-moz-selection, h2::-moz-selection, h4::-moz-selection, a::-moz-selection, p::-moz-selection, img::-moz-selection {
+  background-color: #000000;
+  color: #afafaf;
+}
+
+div::selection, h1::selection, h2::selection, h4::selection, a::selection, p::selection, img::selection {
+  background-color: #000000;
+  color: #afafaf;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.knopka {
+  position: fixed;
+  right: 10px;
+  bottom: 30px;
+  width: 50px;
+  height: 50px;
+  opacity: 0.5;
+}
+.knopka img {
+  border-radius: 50%;
+}
+.knopka:hover {
+  opacity: 0.9;
+}
