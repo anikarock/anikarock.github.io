@@ -1,63 +1,60 @@
 @import "dop";
 body {
-background-image: url(../img/fonser2.jpg);
+    background-image: url(../img/fonser2.jpg);
+    background-size: cover;
 }
 
-header{
+header {
     background-image: url(../img/logos2.jpg);
-    background-position:50% 40%;
+    background-position: 50% 40%;
     background-repeat: no-repeat;
     height: 600px;
-    border-bottom:solid rgb(32, 31, 28) 3px ;
-    .headerone{
+    border-bottom: solid rgb(32, 31, 28) 3px;
+    .headerone {
         display: flex;
-        .one{
+        .one {
             flex: 1;
-           ul{
-               li{
-                   display: inline-block;
-                   margin: 15px;
-                   @include osnova;
-               }
-           }
+            ul {
+                li {
+                    display: inline-block;
+                    margin: 15px;
+                    @include osnova;
+                }
+            }
         }
-        .two{
+        .two {
             text-align: end;
             flex: 1;
             @include osnova;
             margin-right: 10px;
-            h1{
+            h1 {
                 font-size: 40px;
             }
-            p{
+            p {
                 font-size: 20px;
                 text-align: end;
                 margin: 10px;
-                
-                img{
+
+                img {
                     border-radius: 14px;
                     margin-right: 10px;
                 }
             }
-           
-            
-            
-                
         }
     }
-    .headertwo{
+    .headertwo {
         width: 1000px;
         margin: 0 auto;
-        ul{
-            margin-top:480px;
-            li{
+        ul {
+            margin-top: 480px;
+            li {
                 display: inline-block;
                 @include osnova;
-                a{
+                a {
                     color: #d3a93f;
                     font-size: 30px;
-                    margin:20px;
-                    &:hover{
+                    margin: 20px;
+                    &:hover {
                         color: #ffd66e;
                     }
                 }
@@ -65,108 +62,111 @@ header{
         }
     }
 }
-.osnova{
+.osnova {
     @include osnova;
     width: 1000px;
     margin: 0 auto;
-    #onas{
-        border-bottom:solid rgb(32, 31, 28) 3px ;
+    #onas {
+        border-bottom: solid rgb(32, 31, 28) 3px;
         margin-bottom: 10px;
-    
-    h2{
-    color: #af7e02;
 
-      font-size: 30px;
-      text-align: center;
-      padding: 19px;
-    }
-    p{
-      word-spacing: 7px;
-      font-style: italic;
-      padding: 8px;
-      text-indent: 25px;
-      color: rgb(5, 5, 5);
+        h2 {
+            color: #af7e02;
 
-    }
-    img{
-      margin-top: 25px;
-      margin-left: 10px;
-      margin-bottom: 28px;
-    }
-    }
-
-#vakansii{
-    
-    h2{
-        color: #af7e02;
-        font-size: 30px;
-      text-align: center;
-      padding: 19px;
-    }
-    p{
-      word-spacing: 7px;
-      font-style: italic;
-      padding: 8px;
-      text-indent: 25px;
-      color: rgb(5, 5, 5);
-    }
-     h4{
-           font-size: 22px;
-      text-align: center;
-      padding: 19px; 
-      color: rgb(5, 5, 5);
-
+            font-size: 30px;
+            text-align: center;
+            padding: 19px;
         }
-    .img{
+        p {
+            word-spacing: 7px;
+            font-style: italic;
+            padding: 8px;
+            text-indent: 25px;
+            color: rgb(5, 5, 5);
+        }
+        img {
+            margin-top: 25px;
+            margin-left: 10px;
+            margin-bottom: 28px;
+        }
+    }
+
+    #vakansii {
+        h2 {
+            color: #af7e02;
+            font-size: 30px;
+            text-align: center;
+            padding: 19px;
+        }
+        p {
+            word-spacing: 7px;
+            font-style: italic;
+            padding: 8px;
+            text-indent: 25px;
+            color: rgb(5, 5, 5);
+        }
+        h4 {
+            font-size: 22px;
+            text-align: center;
+            padding: 19px;
+            color: rgb(5, 5, 5);
+        }
+        .img {
             max-width: 310px;
         }
-    img{
+        img {
             margin-top: 80px;
         }
-    .spisok{
-        display: flex;
-        border-bottom:solid rgb(32, 31, 28) 3px ;
-        padding-bottom: 20px;  
-    }
-    .snoska{
-        margin-bottom: 40px;
+        .spisok {
+            display: flex;
+            border-bottom: solid rgb(32, 31, 28) 3px;
+            padding-bottom: 20px;
+        }
+        .snoska {
+            margin-bottom: 40px;
+        }
     }
 }
-}
-footer{
-    border-top:solid rgb(32, 31, 28) 3px ;
+footer {
+    border-top: solid rgb(32, 31, 28) 3px;
 
     height: 200px;
     background-image: url(../img/fonser.jpg);
-    p{
+    p {
         color: wheat;
         text-align: center;
         margin-top: 40px;
     }
-      div{
-        width: 200px ;
+    div {
+        width: 200px;
         margin: 0px auto;
     }
 }
-div::selection, h1::selection, h2::selection,h4::selection, a::selection, p::selection, img::selection {
+div::selection,
+h1::selection,
+h2::selection,
+h4::selection,
+a::selection,
+p::selection,
+img::selection {
     background-color: #000000;
     color: #afafaf;
-  }
-  html{
+}
+html {
     scroll-behavior: smooth;
-  }
-  .knopka{
-      position: fixed;
-      right: 10px;
-      bottom:30px;
-      width: 50px;
-      height: 50px;
-      opacity: .5;
-//display: none;
-      img{
-      border-radius:50%;
-      } 
-      &:hover{
-        opacity: .9;
-      }
-  }
+}
+.knopka {
+    position: fixed;
+    right: 10px;
+    bottom: 30px;
+    width: 50px;
+    height: 50px;
+    opacity: 0.5;
+    //display: none;
+    img {
+        border-radius: 50%;
+    }
+    &:hover {
+        opacity: 0.9;
+    }
+}
