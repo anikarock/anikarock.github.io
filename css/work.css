@@ -156,7 +156,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 550px !important;
     background-size: 900px 550px;
     background-position: center !important;
-    max-width: 400px !important;
+    max-width: 500px !important;
   }
   header .headerone {
     -webkit-box-orient: vertical;
@@ -190,7 +190,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .osnova {
-    width: 380px !important;
+    width: 350px !important;
     margin: 0px !important;
   }
   .osnova #onas h2 {
@@ -210,7 +210,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 120px !important;
   }
   .osnova #vakansii {
-    width: 380px !important;
+    width: 350px !important;
   }
   .osnova #vakansii .spisok {
     width: 380px !important;
@@ -245,7 +245,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 body {
-  background-image: url(../img/fonser2.jpg);
+  background-color: #b81515;
 }
 
 header {
@@ -401,7 +401,13 @@ div::-moz-selection, h1::-moz-selection, h2::-moz-selection, h4::-moz-selection,
   color: #afafaf;
 }
 
-div::selection, h1::selection, h2::selection, h4::selection, a::selection, p::selection, img::selection {
+div::selection,
+h1::selection,
+h2::selection,
+h4::selection,
+a::selection,
+p::selection,
+img::selection {
   background-color: #000000;
   color: #afafaf;
 }
