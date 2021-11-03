@@ -6,24 +6,32 @@
   border: 0;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-:focus, :active {
+:focus,
+:active {
   outline: none;
 }
 
-a:focus, a:active {
+a:focus,
+a:active {
   outline: none;
 }
 
-nav, footer, header, aside {
+nav,
+footer,
+header,
+aside {
   display: block;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
   font-size: 100%;
@@ -34,7 +42,9 @@ html, body {
   -webkit-text-size-adjust: 100%;
 }
 
-input, button, textarea {
+input,
+button,
+textarea {
   font-family: inherit;
 }
 
@@ -51,7 +61,8 @@ button::-moz-focus-inner {
   border: 0;
 }
 
-a, a:visited {
+a,
+a:visited {
   text-decoration: none;
 }
 
@@ -67,224 +78,217 @@ img {
   vertical-align: top;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: inherit;
   font-weight: 400;
 }
 /////
 @mixin osnova {
-    font-family: 'Merriweather', serif;
-    font-size: 18px;
-    color: rgb(228, 209, 202);
-    
+  font-family: "Merriweather", serif;
+  font-size: 18px;
+  color: rgb(228, 209, 202);
 }
 
-@media only screen and (max-width:1000px) {
-  header{
+@media only screen and (max-width: 1000px) {
+  header {
     height: 560px !important;
     max-width: 1000px;
 
-    
+    .headertwo {
+      ul {
+        margin-top: 440px !important;
 
-    .headertwo{
-
-      ul{
-          margin-top:440px !important;
-         
-            a{
-              font-size: 27px !important;  
-
-            } 
-          
+        a {
+          font-size: 27px !important;
+        }
       }
-  }  
+    }
   }
-  .osnova{
-    max-width: 900px; 
-    img{
+  .osnova {
+    max-width: 900px;
+    img {
       width: 300px;
-      height: 260px ;
-     }
+      height: 260px;
+    }
   }
 }
 ///////////
-@media only screen and (max-width:880px) {
-  header{
+@media only screen and (max-width: 880px) {
+  header {
     height: 550px !important;
     max-width: 880px;
 
-    .headerone{
+    .headerone {
       flex-direction: column;
-      
-      .two{
-        h1{
-          text-align:left;
+
+      .two {
+        h1 {
+          text-align: left;
           font-size: 28px !important;
         }
-        p{
+        p {
           font-size: 15px !important;
-          text-align:left !important;
-          }
+          text-align: left !important;
+        }
       }
     }
 
-    .headertwo{
+    .headertwo {
+      ul {
+        margin-top: 380px !important;
 
-      ul{
-          margin-top:380px !important;
-         
-            a{
-              font-size: 20px !important;  
-
-            } 
-          
+        a {
+          font-size: 20px !important;
+        }
       }
-  }  
+    }
   }
-.osnova{
-  max-width: 800px; 
-  #onas{
-  
-  h2{
-    font-size: 27px !important;    
-  }  
-  img{
-   width: 250px;
-   height: 230px ;
-  }
-}
-#vakansii{
-  width: 700px; 
-  h2{
-    font-size: 27px !important;   
-  }
-  .spisok{
+  .osnova {
+    max-width: 800px;
+    #onas {
+      h2 {
+        font-size: 27px !important;
+      }
+      img {
+        width: 250px;
+        height: 230px;
+      }
+    }
+    #vakansii {
       width: 700px;
+      h2 {
+        font-size: 27px !important;
       }
-      img{
+      .spisok {
+        width: 700px;
+      }
+      img {
         width: 200px;
         height: 170px;
         margin-left: 10px;
       }
+    }
   }
-  
-}
 
-footer{
-  max-width: 880px;
-}
+  footer {
+    max-width: 880px;
+  }
 }
 
 ///////////////
-@media only screen and (max-width:600px) {
-  body{
+@media only screen and (max-width: 600px) {
+  body {
     width: 650px;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
   }
-  .knopka{
+  .knopka {
     right: 650px !important;
   }
-  
-  header{
+
+  header {
     height: 550px !important;
     background-size: 900px 550px;
     background-position: center !important;
     max-width: 500px !important;
 
-    .headerone{
+    .headerone {
       flex-direction: column;
-      .one{
-        p{
+      .one {
+        p {
           font-size: 15px;
         }
-        li{
+        li {
           margin: 5px !important;
         }
-      }      
-      .two{
-        h1{
-          text-align:left;
+      }
+      .two {
+        h1 {
+          text-align: left;
           font-size: 28px !important;
         }
-        p{
+        p {
           font-size: 15px !important;
-          text-align:left !important;
-          }
-        
+          text-align: left !important;
+        }
       }
     }
 
-    .headertwo{
-
-      ul{
-          margin-top:300px !important;
-          li{
-            display: block !important ;
-            margin-top: 10px !important; 
-            a{
-              font-size: 20px !important;  
-            } 
+    .headertwo {
+      ul {
+        margin-top: 300px !important;
+        li {
+          display: block !important ;
+          margin-top: 10px !important;
+          a {
+            font-size: 20px !important;
           }
+        }
       }
-  }  
+    }
   }
-  .osnova{
+  .osnova {
     width: 350px !important ;
     margin: 0px !important;
-    #onas{  
-    h2{
-      font-size: 27px !important;  
-    }
-    p{
-      word-spacing: 3px !important;
-      padding: 2px !important;
-      text-indent: 20px !important;
-      font-size: 14px !important;
-    }
-    img{
-      margin-top: 5px !important;
-      margin-left: 10px !important;
-      margin-bottom: 5px !important;
-      width: 150px !important;
-      height: 120px !important;
-    }
-    }
-
-#vakansii{
-  width: 350px !important ;
-  .spisok{
-    width: 380px !important ;
-    display: block !important ;
-    
-  }
-
-      h4{
-           font-size: 18px !important;
-        }
-      h2{
-          font-size: 27px !important;
+    #onas {
+      h2 {
+        font-size: 27px !important;
       }
-      p{
+      p {
         word-spacing: 3px !important;
         padding: 2px !important;
         text-indent: 20px !important;
         font-size: 14px !important;
       }
-      .img{
-            max-width: 400px !important;
-        }
-      img{
-            margin-top: 5px !important;
-            width: 150px !important;
-            height: 120px !important;
-        }
-    
-    .snoska{
-        margin-bottom: 40px !important;
+      img {
+        margin-top: 5px !important;
+        margin-left: 10px !important;
+        margin-bottom: 5px !important;
+        width: 150px !important;
+        height: 120px !important;
+      }
     }
-}
-}
-footer{
-  max-width: 400px !important;
 
-}
+    #vakansii {
+      width: 350px !important ;
+      .spisok {
+        width: 380px !important ;
+        display: block !important ;
+      }
+
+      h4 {
+        font-size: 18px !important;
+      }
+      h2 {
+        font-size: 27px !important;
+      }
+      p {
+        word-spacing: 3px !important;
+        padding: 2px !important;
+        text-indent: 20px !important;
+        font-size: 14px !important;
+      }
+      .img {
+        max-width: 400px !important;
+      }
+      img {
+        margin-top: 5px !important;
+        width: 150px !important;
+        height: 120px !important;
+      }
+
+      .snoska {
+        margin-bottom: 40px !important;
+      }
+    }
+  }
+  footer {
+    max-width: 400px !important;
+  }
 }
