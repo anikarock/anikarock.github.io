@@ -1,7 +1,6 @@
 @import "dop";
 body {
-background-image: url(../img/fonser2.jpg);
-
+    background-image: url(../img/fonser2.jpg);
 }
 
 header {
@@ -43,7 +42,7 @@ header {
         }
     }
     .headertwo {
-        width: 900px;
+        width: 800px;
         margin: 0 auto;
         ul {
             margin-top: 480px;
@@ -53,7 +52,7 @@ header {
                 a {
                     color: #d3a93f;
                     font-size: 30px;
-                    margin: 20px;
+                    margin: 10px;
                     &:hover {
                         color: #ffd66e;
                     }

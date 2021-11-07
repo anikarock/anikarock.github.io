@@ -311,7 +311,7 @@ header .headerone .two p img {
   margin-right: 10px;
 }
 header .headertwo {
-  width: 900px;
+  width: 800px;
   margin: 0 auto;
 }
 header .headertwo ul {
@@ -326,7 +326,7 @@ header .headertwo ul li {
 header .headertwo ul li a {
   color: #d3a93f;
   font-size: 30px;
-  margin: 20px;
+  margin: 10px;
 }
 header .headertwo ul li a:hover {
   color: #ffd66e;
